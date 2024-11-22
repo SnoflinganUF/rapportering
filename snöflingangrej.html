@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UF Rapportering</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background: #f9f9f9;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rapportera Försäljning</h1>
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLScCgYxZweKj0E2K7dhP6LiEyT0j-dL0pkCqxbpSnK5FXKBf-A/formResponse" method="post">
+    <!-- Säljarens namn/ID -->
+    <label for="seller">Namn/ID (säljare):</label>
+    <input type="text" id="seller" name="entry.1733091249" placeholder="Ditt namn/ID" required>
+
+    <!-- Kundens namn -->
+    <label for="customer_name">Namn på kund:</label>
+    <input type="text" id="customer_name" name="entry.1930512155" placeholder="Kundens namn" required>
+
+    <!-- Kundens adress -->
+    <label for="customer_address">Adress på kund:</label>
+    <input type="text" id="customer_address" name="entry.1446649848" placeholder="Kundens adress" required>
+
+    <!-- Antal kunder -->
+    <label for="customers">Antal kunder:</label>
+    <input type="number" id="customers" name="entry.467286307" placeholder="Antal kunder" required>
+
+    <!-- Antal sålda snöflingor -->
+    <label for="snowflakes">Antal sålda snöflingor:</label>
+    <input type="number" id="snowflakes" name="entry.1539815186" placeholder="Antal sålda" required>
+
+    <!-- Skicka-knapp -->
+    <button type="submit">Skicka</button>
+  </form>
+</body>
+</html>
